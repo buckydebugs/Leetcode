@@ -66,7 +66,7 @@ public:
         {
             inorderMappy[inorder[i]] = i;
         }
-        return buildTree (inorder, 0, inorder.size(), postorder, 0, postorder.size() - 1, inorderMappy);
+        return buildTree (inorder, 0, inorder.size() - 1, postorder, 0, postorder.size() - 1, inorderMappy);
     }
 };
 //T.C. -> O(n) + O(maptime)
